@@ -15,7 +15,8 @@ public class zgadywanieLiczb {
 
         System.out.println("Pomysl liczbe od 0-1000 a ja ja zgadne max w 10 probach!");
         for (int i = 0; i < 10; i++) {
-            temp = random.nextInt((max - min) / 2) + min;
+            temp = ((max - min) / 2) + min;
+//            temp = random.nextInt((max - min) / 2) + min;
             System.out.println("Zgaduje: " + temp);
             System.out.println("1: za duzo!");
             System.out.println("2: za malo!");

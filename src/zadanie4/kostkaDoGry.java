@@ -40,7 +40,7 @@ public class kostkaDoGry {
             cubeType = cubeType(inCodeChar, 2);
         }
         //check if the cube type is correct one (D3,D4,D6,D8,D10,D20,D100)
-        if (cubeType != 3 || cubeType != 4 || cubeType != 6 || cubeType != 8 || cubeType != 10 || cubeType != 20 || cubeType != 100) {
+        if (cubeType != 3 && cubeType != 4 && cubeType != 6 && cubeType != 8 && cubeType != 10 && cubeType != 20 && cubeType != 100) {
             System.out.println("Typ kostki nie odpowiedni!");
             return;
         }

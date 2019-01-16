@@ -41,18 +41,16 @@ public class symulatorLotto {
                 randInt = randNumber();
                 exitLoop = false;
                 for (int j = 0; j < 6; j++) {
-                    if (i != j) {
-                        if (randInt == intArr[j]) {
+                    if ((i != j) && (randInt == intArr[j])) {
                             exitLoop = true;
                             break;
                         }
-                    }
                 }
-                if (exitLoop == false) {
+                if (!exitLoop) {
                     intArr[i] = randInt;
                     exitLoop = true;
                 }
-            } while (exitLoop == false);
+            } while (!exitLoop);
         }
         return intArr;
 
