@@ -83,19 +83,12 @@ public class KostkaDoGry {
                 return;
             }
 
-
         } else if (intAtFirst && cubeType(intArr[1]) == -1) {
             System.out.println("NIepoprawny typ kostki!");
             return;
         }
 
-//        for (int digit : intArr) {
-//            System.out.println(digit);
-//        }
-
-
     }
-
 
     //getting code from the user
     static String getString() {
@@ -149,16 +142,4 @@ public class KostkaDoGry {
         }
         return tempInt;
     }
-
-
 }
-
-/*
-            int strLenght=0;
-            intArrWithStrLenght=new int[intArr.length];
-            int i=0;
-            for (int intTemp : intArr){
-                strLenght+= String.valueOf(intArr[i]).length();
-            }
-            String tempStr= String.valueOf(intArr[0])
- */
