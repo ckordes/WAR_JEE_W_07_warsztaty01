@@ -71,9 +71,9 @@ public class KostkaDoGry {
                 int inputStrLenght = inputStr.length();
                 int sum = 0;
 
-                if (Character.valueOf(inputStr.charAt(inputStrLenght - lastStrLenght - 1)) == 43) {//43='+'
+                if ((inputStr.charAt(inputStrLenght - lastStrLenght - 1)) == '+') {//43='+'
                     sum = diceCount(multiplier, cubeType(intArr[0])) + intArr[1];
-                } else if (Character.valueOf(inputStr.charAt(inputStrLenght - lastStrLenght - 1)) == 45) {//45='-'
+                } else if ((inputStr.charAt(inputStrLenght - lastStrLenght - 1)) == '-') {//45='-'
                     sum = diceCount(multiplier, cubeType(intArr[0])) - intArr[1];
                 }
                 System.out.println("Wynik kodu dla: " + inputStr + " wynosi: " + sum);
